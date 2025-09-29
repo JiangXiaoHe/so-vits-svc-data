@@ -1,69 +1,21 @@
-2025-09-29 03:31:50.015 | INFO     | __main__:<module>:32 -  > config:configs/diffusion.yaml
-2025-09-29 03:31:50.015 | INFO     | __main__:<module>:33 -  > exp:logs/44k/diffusion
-2025-09-29 03:31:50.688 | INFO     | __main__:<module>:51 -  > Now model timesteps is 1000, and k_step_max is 1000
- [*] restoring model from logs/44k/diffusion/model_48000.pt
+2025-09-29 11:49:03.755 | INFO     | __main__:<module>:32 -  > config:configs/diffusion.yaml
+2025-09-29 11:49:03.755 | INFO     | __main__:<module>:33 -  > exp:logs/44k/diffusion
+2025-09-29 11:49:04.311 | INFO     | __main__:<module>:51 -  > Now model timesteps is 1000, and k_step_max is 1000
+ [*] restoring model from logs/44k/diffusion/model_54000.pt
 Load all the data filelists: filelists/train.txt
   0%|          | 0/1024 [00:00<?, ?it/s]/data/so-vits-svc-1/diffusion/data_loaders.py:135: FutureWarning: get_duration() keyword argument 'filename' has been renamed to 'path' in version 0.10.0.
 	This alias will be removed in version 1.0.
   duration = librosa.get_duration(filename = path_audio, sr = self.sample_rate)
-  0%|          | 1/1024 [00:00<10:05,  1.69it/s]  3%|▎         | 29/1024 [00:00<00:17, 55.52it/s]  6%|▌         | 57/1024 [00:00<00:09, 103.72it/s]  8%|▊         | 86/1024 [00:00<00:06, 146.88it/s] 11%|█▏        | 117/1024 [00:01<00:04, 186.71it/s] 14%|█▍        | 146/1024 [00:01<00:04, 213.06it/s] 17%|█▋        | 176/1024 [00:01<00:03, 236.11it/s] 20%|██        | 205/1024 [00:01<00:03, 249.46it/s] 23%|██▎       | 235/1024 [00:01<00:03, 262.08it/s] 26%|██▌       | 264/1024 [00:01<00:02, 266.34it/s] 29%|██▉       | 296/1024 [00:01<00:02, 278.99it/s] 32%|███▏      | 326/1024 [00:01<00:02, 278.22it/s] 35%|███▍      | 355/1024 [00:01<00:02, 280.64it/s] 38%|███▊      | 384/1024 [00:01<00:02, 276.51it/s] 40%|████      | 413/1024 [00:02<00:02, 273.97it/s] 43%|████▎     | 443/1024 [00:02<00:02, 279.96it/s] 46%|████▌     | 473/1024 [00:02<00:01, 284.28it/s] 49%|████▉     | 503/1024 [00:02<00:01, 286.91it/s] 52%|█████▏    | 534/1024 [00:02<00:01, 290.90it/s] 55%|█████▌    | 564/1024 [00:02<00:01, 276.41it/s] 58%|█████▊    | 592/1024 [00:02<00:01, 271.15it/s] 61%|██████    | 621/1024 [00:02<00:01, 275.22it/s] 63%|██████▎   | 649/1024 [00:02<00:01, 272.59it/s] 66%|██████▌   | 677/1024 [00:02<00:01, 273.53it/s] 69%|██████▉   | 705/1024 [00:03<00:01, 272.76it/s] 72%|███████▏  | 734/1024 [00:03<00:01, 275.41it/s] 74%|███████▍  | 762/1024 [00:03<00:00, 276.56it/s] 77%|███████▋  | 792/1024 [00:03<00:00, 281.49it/s] 80%|████████  | 821/1024 [00:03<00:00, 276.85it/s] 83%|████████▎ | 849/1024 [00:03<00:00, 271.63it/s] 86%|████████▌ | 878/1024 [00:03<00:00, 274.78it/s] 89%|████████▊ | 908/1024 [00:03<00:00, 281.14it/s] 92%|█████████▏| 937/1024 [00:03<00:00, 281.05it/s] 94%|█████████▍| 966/1024 [00:04<00:00, 281.72it/s] 97%|█████████▋| 995/1024 [00:04<00:00, 282.44it/s]100%|██████████| 1024/1024 [00:04<00:00, 281.81it/s]100%|██████████| 1024/1024 [00:04<00:00, 242.07it/s]
+  0%|          | 1/1024 [00:00<10:07,  1.68it/s]  1%|▏         | 15/1024 [00:00<00:35, 28.18it/s]  3%|▎         | 29/1024 [00:00<00:19, 51.55it/s]  4%|▍         | 43/1024 [00:00<00:13, 71.24it/s]  5%|▌         | 55/1024 [00:01<00:11, 83.15it/s]  7%|▋         | 69/1024 [00:01<00:09, 97.27it/s]  8%|▊         | 82/1024 [00:01<00:09, 103.12it/s]  9%|▉         | 96/1024 [00:01<00:08, 111.78it/s] 11%|█         | 110/1024 [00:01<00:07, 118.92it/s] 12%|█▏        | 124/1024 [00:01<00:07, 124.09it/s] 13%|█▎        | 138/1024 [00:01<00:07, 123.50it/s] 15%|█▍        | 152/1024 [00:01<00:06, 125.43it/s] 16%|█▌        | 166/1024 [00:01<00:06, 128.05it/s] 18%|█▊        | 180/1024 [00:01<00:06, 127.86it/s] 19%|█▉        | 193/1024 [00:02<00:06, 123.35it/s] 20%|██        | 207/1024 [00:02<00:06, 126.54it/s] 22%|██▏       | 221/1024 [00:02<00:06, 129.70it/s] 23%|██▎       | 235/1024 [00:02<00:06, 130.10it/s] 24%|██▍       | 249/1024 [00:02<00:06, 126.59it/s] 26%|██▌       | 262/1024 [00:02<00:06, 123.19it/s] 27%|██▋       | 276/1024 [00:02<00:05, 126.44it/s] 28%|██▊       | 289/1024 [00:02<00:05, 126.89it/s] 30%|██▉       | 303/1024 [00:02<00:05, 127.45it/s] 31%|███       | 316/1024 [00:03<00:05, 126.83it/s] 32%|███▏      | 329/1024 [00:03<00:05, 125.66it/s] 33%|███▎      | 343/1024 [00:03<00:05, 129.59it/s] 35%|███▍      | 356/1024 [00:03<00:05, 124.95it/s] 36%|███▌      | 369/1024 [00:03<00:05, 123.00it/s] 37%|███▋      | 382/1024 [00:03<00:05, 123.60it/s] 39%|███▊      | 395/1024 [00:03<00:05, 117.57it/s] 40%|███▉      | 407/1024 [00:03<00:05, 113.85it/s] 41%|████      | 421/1024 [00:03<00:05, 120.58it/s] 42%|████▏     | 434/1024 [00:04<00:04, 120.89it/s] 44%|████▎     | 447/1024 [00:04<00:04, 121.31it/s] 45%|████▌     | 461/1024 [00:04<00:04, 126.16it/s] 46%|████▋     | 474/1024 [00:04<00:04, 125.49it/s] 48%|████▊     | 488/1024 [00:04<00:04, 129.03it/s] 49%|████▉     | 501/1024 [00:04<00:04, 124.32it/s] 50%|█████     | 515/1024 [00:04<00:03, 128.79it/s] 52%|█████▏    | 529/1024 [00:04<00:03, 130.65it/s] 53%|█████▎    | 543/1024 [00:04<00:03, 127.67it/s] 54%|█████▍    | 556/1024 [00:04<00:03, 126.78it/s] 56%|█████▌    | 570/1024 [00:05<00:03, 129.24it/s] 57%|█████▋    | 584/1024 [00:05<00:03, 130.59it/s] 58%|█████▊    | 598/1024 [00:05<00:03, 130.83it/s] 60%|█████▉    | 613/1024 [00:05<00:03, 134.63it/s] 61%|██████    | 627/1024 [00:05<00:03, 130.68it/s] 63%|██████▎   | 641/1024 [00:05<00:02, 127.91it/s] 64%|██████▍   | 655/1024 [00:05<00:02, 127.74it/s] 65%|██████▌   | 668/1024 [00:05<00:02, 125.09it/s] 67%|██████▋   | 681/1024 [00:05<00:02, 126.12it/s] 68%|██████▊   | 695/1024 [00:06<00:02, 123.26it/s] 69%|██████▉   | 709/1024 [00:06<00:02, 126.55it/s] 71%|███████   | 722/1024 [00:06<00:02, 126.37it/s] 72%|███████▏  | 735/1024 [00:06<00:02, 125.85it/s] 73%|███████▎  | 750/1024 [00:06<00:02, 130.50it/s] 75%|███████▍  | 764/1024 [00:06<00:02, 124.88it/s] 76%|███████▌  | 778/1024 [00:06<00:01, 125.84it/s] 77%|███████▋  | 792/1024 [00:06<00:01, 129.45it/s] 79%|███████▊  | 806/1024 [00:06<00:01, 129.14it/s] 80%|███████▉  | 819/1024 [00:07<00:01, 125.60it/s] 81%|████████▏ | 832/1024 [00:07<00:01, 123.00it/s] 83%|████████▎ | 846/1024 [00:07<00:01, 126.31it/s] 84%|████████▍ | 859/1024 [00:07<00:01, 126.31it/s] 85%|████████▌ | 872/1024 [00:07<00:01, 126.05it/s] 86%|████████▋ | 885/1024 [00:07<00:01, 121.84it/s] 88%|████████▊ | 900/1024 [00:07<00:00, 128.04it/s] 89%|████████▉ | 913/1024 [00:07<00:00, 127.51it/s] 90%|█████████ | 926/1024 [00:07<00:00, 124.24it/s] 92%|█████████▏| 939/1024 [00:08<00:00, 122.43it/s] 93%|█████████▎| 952/1024 [00:08<00:00, 123.07it/s] 94%|█████████▍| 966/1024 [00:08<00:00, 127.27it/s] 96%|█████████▌| 979/1024 [00:08<00:00, 127.54it/s] 97%|█████████▋| 993/1024 [00:08<00:00, 128.80it/s] 98%|█████████▊| 1008/1024 [00:08<00:00, 132.15it/s]100%|█████████▉| 1022/1024 [00:08<00:00, 130.53it/s]100%|██████████| 1024/1024 [00:08<00:00, 118.35it/s]
 Load all the data filelists: filelists/val.txt
-  0%|          | 0/113 [00:00<?, ?it/s] 12%|█▏        | 13/113 [00:00<00:00, 112.72it/s] 22%|██▏       | 25/113 [00:00<00:00, 113.59it/s] 33%|███▎      | 37/113 [00:00<00:00, 112.70it/s] 43%|████▎     | 49/113 [00:00<00:00, 85.92it/s]  52%|█████▏    | 59/113 [00:00<00:00, 88.73it/s] 61%|██████    | 69/113 [00:00<00:00, 90.22it/s] 70%|██████▉   | 79/113 [00:00<00:00, 90.40it/s] 79%|███████▉  | 89/113 [00:00<00:00, 92.31it/s] 88%|████████▊ | 99/113 [00:01<00:00, 78.67it/s] 96%|█████████▌| 108/113 [00:01<00:00, 80.94it/s]100%|██████████| 113/113 [00:01<00:00, 91.33it/s]
+  0%|          | 0/113 [00:00<?, ?it/s] 10%|▉         | 11/113 [00:00<00:00, 105.16it/s] 19%|█▉        | 22/113 [00:00<00:00, 105.17it/s] 29%|██▉       | 33/113 [00:00<00:00, 85.97it/s]  37%|███▋      | 42/113 [00:00<00:00, 82.86it/s] 45%|████▌     | 51/113 [00:00<00:00, 83.33it/s] 53%|█████▎    | 60/113 [00:00<00:00, 84.53it/s] 61%|██████    | 69/113 [00:00<00:00, 80.80it/s] 69%|██████▉   | 78/113 [00:00<00:00, 74.24it/s] 77%|███████▋  | 87/113 [00:01<00:00, 77.43it/s] 84%|████████▍ | 95/113 [00:01<00:00, 77.55it/s] 92%|█████████▏| 104/113 [00:01<00:00, 80.19it/s]100%|██████████| 113/113 [00:01<00:00, 81.36it/s]100%|██████████| 113/113 [00:01<00:00, 82.19it/s]
 --- model size ---
 model: 55,192,704
 ======= start training =======
 /data/so-vits-svc-1/diffusion/solver.py:106: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
   scaler = GradScaler()
 epoch|batch_idx/num_batches|output_dir|batch/s|lr|time|step
-epoch: 5 |   9/ 18 | logs/44k/diffusion | batch/s: 0.87 | lr: 0.0002 | loss: 0.016 | time: 0:01:55.2 | step: 48100
-epoch: 11 |   1/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.022 | time: 0:03:48.8 | step: 48200
-epoch: 16 |  11/ 18 | logs/44k/diffusion | batch/s: 0.87 | lr: 0.0002 | loss: 0.014 | time: 0:05:43.3 | step: 48300
-epoch: 22 |   3/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.006 | time: 0:07:36.4 | step: 48400
-epoch: 27 |  13/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.007 | time: 0:09:30.4 | step: 48500
-epoch: 33 |   5/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.018 | time: 0:11:23.5 | step: 48600
-epoch: 38 |  15/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.007 | time: 0:13:17.5 | step: 48700
-epoch: 44 |   7/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.022 | time: 0:15:10.6 | step: 48800
-epoch: 49 |  17/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.000 | time: 0:17:03.7 | step: 48900
-epoch: 55 |   9/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.025 | time: 0:18:57.7 | step: 49000
-epoch: 61 |   1/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.007 | time: 0:20:50.8 | step: 49100
-epoch: 66 |  11/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.020 | time: 0:22:44.8 | step: 49200
-epoch: 72 |   3/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.013 | time: 0:24:37.9 | step: 49300
-epoch: 77 |  13/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.009 | time: 0:26:31.9 | step: 49400
-epoch: 83 |   5/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.011 | time: 0:28:24.9 | step: 49500
-epoch: 88 |  15/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.027 | time: 0:30:18.9 | step: 49600
-epoch: 94 |   7/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.028 | time: 0:32:12.0 | step: 49700
-epoch: 99 |  17/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.003 | time: 0:34:05.1 | step: 49800
-epoch: 105 |   9/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.010 | time: 0:35:59.1 | step: 49900
-epoch: 111 |   1/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.010 | time: 0:37:52.1 | step: 50000
- [*] model checkpoint saved: logs/44k/diffusion/model_50000.pt
- [*] model checkpoint deleted: logs/44k/diffusion/model_48000.pt
- [*] testing...
---------
-0/113 - FuNingNa_922
->> ./dataset/44k/FuNingNa/FuNingNa_922
-sample time step:   0%|          | 0/100 [00:00<?, ?it/s]sample time step:   1%|          | 1/100 [00:00<00:11,  8.69it/s]sample time step:   3%|▎         | 3/100 [00:00<00:07, 12.73it/s]sample time step:   6%|▌         | 6/100 [00:00<00:04, 19.01it/s]sample time step:   9%|▉         | 9/100 [00:00<00:04, 22.29it/s]sample time step:  12%|█▏        | 12/100 [00:00<00:03, 24.19it/s]sample time step:  15%|█▌        | 15/100 [00:00<00:03, 25.33it/s]sample time step:  18%|█▊        | 18/100 [00:00<00:03, 26.11it/s]sample time step:  21%|██        | 21/100 [00:00<00:02, 26.65it/s]sample time step:  24%|██▍       | 24/100 [00:01<00:02, 26.98it/s]sample time step:  27%|██▋       | 27/100 [00:01<00:02, 27.17it/s]sample time step:  30%|███       | 30/100 [00:01<00:02, 27.34it/s]sample time step:  33%|███▎      | 33/100 [00:01<00:02, 27.47it/s]sample time step:  36%|███▌      | 36/100 [00:01<00:02, 27.11it/s]sample time step:  39%|███▉      | 39/100 [00:01<00:02, 27.29it/s]sample time step:  42%|████▏     | 42/100 [00:01<00:02, 27.41it/s]sample time step:  45%|████▌     | 45/100 [00:01<00:02, 27.45it/s]sample time step:  48%|████▊     | 48/100 [00:01<00:01, 27.55it/s]sample time step:  51%|█████     | 51/100 [00:01<00:01, 27.64it/s]sample time step:  54%|█████▍    | 54/100 [00:02<00:01, 27.66it/s]sample time step:  57%|█████▋    | 57/100 [00:02<00:01, 27.73it/s]sample time step:  60%|██████    | 60/100 [00:02<00:01, 27.77it/s]sample time step:  63%|██████▎   | 63/100 [00:02<00:01, 27.79it/s]sample time step:  66%|██████▌   | 66/100 [00:02<00:01, 27.73it/s]sample time step:  69%|██████▉   | 69/100 [00:02<00:01, 27.72it/s]sample time step:  72%|███████▏  | 72/100 [00:02<00:01, 27.71it/s]sample time step:  75%|███████▌  | 75/100 [00:02<00:00, 27.72it/s]sample time step:  78%|███████▊  | 78/100 [00:02<00:00, 27.73it/s]sample time step:  81%|████████  | 81/100 [00:03<00:00, 27.71it/s]sample time step:  84%|████████▍ | 84/100 [00:03<00:00, 27.41it/s]sample time step:  87%|████████▋ | 87/100 [00:03<00:00, 27.51it/s]sample time step:  90%|█████████ | 90/100 [00:03<00:00, 27.57it/s]sample time step:  93%|█████████▎| 93/100 [00:03<00:00, 27.62it/s]sample time step:  96%|█████████▌| 96/100 [00:03<00:00, 27.66it/s]sample time step:  99%|█████████▉| 99/100 [00:03<00:00, 27.69it/s]sample time step: 100%|██████████| 100/100 [00:03<00:00, 26.46it/s]
-| Load HifiGAN:  pretrain/nsf_hifigan/model
-/usr/local/lib/python3.10/dist-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
-  WeightNorm.apply(module, name, dim)
-Removing weight norm...
-RTF: 1.0772733873797251  | 5.102904796600342 / 4.73687074829932
-Traceback (most recent call last):
-  File "/data/so-vits-svc-1/train_diff.py", line 76, in <module>
-    train(args, initial_global_step, model, optimizer, scheduler, vocoder, loader_train, loader_valid)
-  File "/data/so-vits-svc-1/diffusion/solver.py", line 185, in train
-    test_loss = test(args, model, vocoder, loader_test, saver)
-  File "/data/so-vits-svc-1/diffusion/solver.py", line 74, in test
-    saver.log_spec(f"{speaker}_{fn}.wav", data['mel'], mel)
-  File "/data/so-vits-svc-1/diffusion/logger/saver.py", line 82, in log_spec
-    self.writer.add_figure(name, fig, self.global_step)
-  File "/usr/local/lib/python3.10/dist-packages/torch/utils/tensorboard/writer.py", line 753, in add_figure
-    self.add_image(
-  File "/usr/local/lib/python3.10/dist-packages/torch/utils/tensorboard/writer.py", line 625, in add_image
-    image(tag, img_tensor, dataformats=dataformats), global_step, walltime
-  File "/usr/local/lib/python3.10/dist-packages/torch/utils/tensorboard/summary.py", line 577, in image
-    image = make_image(tensor, rescale=rescale)
-  File "/usr/local/lib/python3.10/dist-packages/torch/utils/tensorboard/summary.py", line 625, in make_image
-    ANTIALIAS = Image.Resampling.LANCZOS
-  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 65, in __getattr__
-    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
-AttributeError: module 'PIL.Image' has no attribute 'Resampling'
+epoch: 5 |   9/ 18 | logs/44k/diffusion | batch/s: 0.87 | lr: 0.0002 | loss: 0.004 | time: 0:01:55.1 | step: 54100
+epoch: 11 |   1/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.005 | time: 0:03:48.6 | step: 54200
+epoch: 16 |  11/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.023 | time: 0:05:42.9 | step: 54300
+epoch: 22 |   3/ 18 | logs/44k/diffusion | batch/s: 0.88 | lr: 0.0002 | loss: 0.034 | time: 0:07:36.0 | step: 54400
