@@ -1,0 +1,23 @@
+# 1. 忽略所有大模型文件
+*.pth
+*.pt
+*.bin
+
+# 2. 忽略预训练模型目录（pretrain/ 下的大文件）
+pretrain/
+pre_trained_model/
+
+# 3. 忽略数据集相关
+dataset/
+*.tar
+*.tar.gz
+*.zip
+*.filepart
+
+# 4. 忽略训练日志和缓存
+logs/
+# 5. 忽略其他无用目录
+CppDataProcess/
+fap/
+onnxexport/
+vencoder/workenv/
