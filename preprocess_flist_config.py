@@ -65,8 +65,10 @@ if __name__ == "__main__":
             wavs.append(file_path)
 
         shuffle(wavs)
-        train += wavs[2:]
-        val += wavs[:2]
+        # 计算10%的文件作为验证集
+        val_size = max(1, int(len(wavs) * 0.1))
+        train += wavs[val_size:]
+        val += wavs[:val_size]
 
     shuffle(train)
     shuffle(val)
