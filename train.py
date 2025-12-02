@@ -6,7 +6,7 @@ import time
 import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
-from torch.cuda.amp import GradScaler, autocast
+from torch.amp import GradScaler, autocast
 from torch.nn import functional as F
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader
@@ -111,7 +111,7 @@ def run(rank, n_gpus, hps):
     scheduler_g = torch.optim.lr_scheduler.ExponentialLR(optim_g, gamma=hps.train.lr_decay, last_epoch=epoch_str - 2)
     scheduler_d = torch.optim.lr_scheduler.ExponentialLR(optim_d, gamma=hps.train.lr_decay, last_epoch=epoch_str - 2)
 
-    scaler = GradScaler(enabled=hps.train.fp16_run)
+    scaler = GradScaler('cuda', enabled=hps.train.fp16_run)
 
     for epoch in range(epoch_str, hps.train.epochs + 1):
         # set up warm-up learning rate
@@ -163,7 +163,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
             hps.data.mel_fmin,
             hps.data.mel_fmax)
         
-        with autocast(enabled=hps.train.fp16_run, dtype=half_type):
+        with autocast('cuda', enabled=hps.train.fp16_run, dtype=half_type):
             y_hat, ids_slice, z_mask, \
             (z, z_p, m_p, logs_p, m_q, logs_q), pred_lf0, norm_lf0, lf0 = net_g(c, f0, uv, spec, g=g, c_lengths=lengths,
                                                                                 spec_lengths=lengths,vol = volume)
@@ -184,7 +184,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
             # Discriminator
             y_d_hat_r, y_d_hat_g, _, _ = net_d(y, y_hat.detach())
 
-            with autocast(enabled=False, dtype=half_type):
+            with autocast('cuda', enabled=False, dtype=half_type):
                 loss_disc, losses_disc_r, losses_disc_g = discriminator_loss(y_d_hat_r, y_d_hat_g)
                 loss_disc_all = loss_disc
         
@@ -195,10 +195,10 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
         scaler.step(optim_d)
         
 
-        with autocast(enabled=hps.train.fp16_run, dtype=half_type):
+        with autocast('cuda', enabled=hps.train.fp16_run, dtype=half_type):
             # Generator
             y_d_hat_r, y_d_hat_g, fmap_r, fmap_g = net_d(y, y_hat)
-            with autocast(enabled=False, dtype=half_type):
+            with autocast('cuda', enabled=False, dtype=half_type):
                 loss_mel = F.l1_loss(y_mel, y_hat_mel) * hps.train.c_mel
                 loss_kl = kl_loss(z_p, logs_q, m_p, logs_p, z_mask) * hps.train.c_kl
                 loss_fm = feature_loss(fmap_r, fmap_g)
