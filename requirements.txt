@@ -33,3 +33,15 @@ faiss-gpu==1.7.2
 scikit-learn>=1.2.0
 matplotlib>=3.7.0
 pydub>=0.25.1
+omegaconf==2.1.1
+hydra-core==1.0.7
+bitarray
+cython
+regex
+sacrebleu>=1.4.12
+numba>=0.62.0
+cffi>=1.15.0
+audioread>=3.0.0
+pooch>=1.6.0
+resampy>=0.4.0
+antlr4-python3-runtime>=4.8
