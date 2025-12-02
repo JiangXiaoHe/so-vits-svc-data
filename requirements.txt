@@ -29,7 +29,7 @@ pynvml
 faiss-cpu
 einops>=0.6.0
 local_attention
-faiss-gpu>=1.7.3
+faiss-gpu==1.7.2
 scikit-learn>=1.2.0
 matplotlib>=3.7.0
 pydub>=0.25.1
