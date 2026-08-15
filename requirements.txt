@@ -25,7 +25,7 @@ transformers>=4.28.0
 edge_tts
 langdetect
 pyyaml
-pynvml
+nvidia-ml-py>=12.535.133
 faiss-cpu
 einops>=0.6.0
 local_attention
